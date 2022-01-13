@@ -1,4 +1,4 @@
-const JSONFILE = require('../../data/logements.json')
+import JSONFILE from '../../data/logements.json'
 
 const fetchHousings = {
     all: () => JSONFILE,

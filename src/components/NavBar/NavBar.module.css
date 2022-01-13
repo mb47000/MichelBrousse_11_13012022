@@ -1,0 +1,35 @@
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list_item {
+  width: 136px;
+  text-align: right;
+  list-style: none;
+}
+.nav__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 34.22px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ff6060;
+}
+.nav__link_active {
+  text-decoration: underline;
+}
+@media screen and (max-width: 809px) {
+  .nav__link {
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  .nav__list {
+    padding-inline-start: 0;
+    justify-content: space-evenly;
+  }
+  .nav__list_item {
+    width: auto;
+    padding-left: 10px;
+  }
+}

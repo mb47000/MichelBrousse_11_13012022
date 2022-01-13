@@ -1,0 +1,29 @@
+.footer {
+  background: black;
+  height: 209px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 43px;
+}
+.footer__brand {
+  color: white;
+  margin: 29px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 34.22px;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 20px;
+    justify-content: center;
+    padding-top: 35px;
+  }
+  .footer__brand {
+    line-height: 17px;
+    font-size: 12px;
+  }
+}
