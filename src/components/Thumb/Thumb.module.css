@@ -1,0 +1,23 @@
+.thumb {
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.thumb__title {
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .thumb {
+    aspect-ratio: 355/255;
+  }
+}
