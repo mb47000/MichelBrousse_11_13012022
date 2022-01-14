@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import fetchHousings from '../../utils/fetch'
+import Slider from '../../components/Slider'
 
 export class Home extends Component {
   componentDidMount() {
@@ -7,7 +8,7 @@ export class Home extends Component {
   }
 
   render() {
-    return <div>Home</div>
+    return <div></div>
   }
 }
 
