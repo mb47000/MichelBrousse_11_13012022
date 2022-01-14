@@ -24,6 +24,7 @@ class Slider extends React.Component {
 
   render() {
     const { pictures } = this.props
+    const { moreThanOne } = this.state
     return (
       <div
         className={styles.slider}
@@ -31,7 +32,7 @@ class Slider extends React.Component {
         aria-roledescription="carousel"
         aria-label="Photos de l'appartement"
       >
-        {this.state.moreThanOne && (
+        {moreThanOne && (
           <div
             className={`${styles.slider__controls}, ${styles.slider__controls_previous}`}
             onClick={() => this.back(pictures)}
@@ -56,7 +57,7 @@ class Slider extends React.Component {
           ></img>
         </div>
 
-        {this.state.moreThanOne && (
+        {moreThanOne && (
           <div
             className={`${styles.slider__controls} ${styles.slider__controls_next}`}
             onClick={() => this.next(pictures)}
