@@ -30,7 +30,9 @@ class Dropdown extends Component {
     return (
       <div className={styles.dropdown}>
         <div
-          className={`${styles.dropdown__toggle} ${styles[addClass]}`}
+          className={`${styles.dropdown__toggle} ${styles[addClass]} ${
+            addClass === 's_about' ? 'm-1' : ''
+          }`}
           onClick={this.toggleDropdown}
         >
           <div>{title}</div>
@@ -43,7 +45,11 @@ class Dropdown extends Component {
           </div>
         </div>
         {this.state.visible && (
-          <div className={`${styles.dropdown__content} ${styles[addClass]}`}>
+          <div
+            className={`${styles.dropdown__content} ${styles[addClass]} ${
+              addClass === 's_about' ? 'm-1n' : ''
+            }`}
+          >
             {this.setContent(content)}
           </div>
         )}

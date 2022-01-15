@@ -2,7 +2,7 @@
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   display: flex-wrap;
-  height: 86%;
+  height: 90%;
 }
 .dropdown__toggle {
   display: flex;
@@ -17,6 +17,9 @@
   background: #ff6060;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.dropdown__toggle.s_about {
 }
 
 .dropdown__toggle.m_font {
@@ -38,6 +41,11 @@
   line-height: 25px;
   height: 92%;
 }
+
+.dropdown__content.s_about p {
+  padding-bottom: 10px;
+}
+
 .dropdown__content ul {
   list-style-type: none;
   padding: 0;
