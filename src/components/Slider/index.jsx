@@ -34,7 +34,7 @@ class Slider extends React.Component {
       >
         {moreThanOne && (
           <div
-            className={`${styles.slider__controls}, ${styles.slider__controls_previous}`}
+            className={`${styles.slider__controls} ${styles.slider__controls_previous}`}
             onClick={() => this.back(pictures)}
             role="button"
             aria-label="Photo précédante"

@@ -2,8 +2,7 @@
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   display: flex-wrap;
-  background: #f6f6f6;
-  border-radius: 5px;
+  height: 86%;
 }
 .dropdown__toggle {
   display: flex;
@@ -19,13 +18,29 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.dropdown__toggle.m_font {
+  font-size: 18px;
+}
+
 .dropdown__content {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
   color: #ff6060;
   text-align: left;
-  padding: 18px;
+  padding: 1px 20px 0px 20px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+.dropdown__content.m_font {
+  font-size: 18px;
+  line-height: 25px;
+  height: 92%;
+}
+.dropdown__content ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styles from './Dropdown.module.css'
 
-export class Dropdown extends Component {
+class Dropdown extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -25,11 +25,14 @@ export class Dropdown extends Component {
     )
 
   render() {
-    const { title, content } = this.props
+    const { title, content, addClass = '' } = this.props
 
     return (
       <div className={styles.dropdown}>
-        <div className={styles.dropdown__toggle} onClick={this.toggleDropdown}>
+        <div
+          className={`${styles.dropdown__toggle} ${styles[addClass]}`}
+          onClick={this.toggleDropdown}
+        >
           <div>{title}</div>
           <div>
             {this.state.visible ? (
@@ -40,7 +43,7 @@ export class Dropdown extends Component {
           </div>
         </div>
         {this.state.visible && (
-          <div className={styles.dropdown__content}>
+          <div className={`${styles.dropdown__content} ${styles[addClass]}`}>
             {this.setContent(content)}
           </div>
         )}

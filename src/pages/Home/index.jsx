@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom'
 import Thumb from '../../components/Thumb'
 import styles from './Home.module.css'
 
-export class Home extends Component {
+class Home extends Component {
   constructor() {
     super()
     this.state = {
-      housings: fetchHousings.all(),
+      housings: [],
     }
+  }
+
+  componentDidMount() {
+    const housings = fetchHousings.all()
+    this.setState({ housings })
   }
 
   render() {

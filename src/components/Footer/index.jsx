@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logo from '../../assets/logo-footer.svg'
 import styles from './Footer.module.css'
 
-export class Footer extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer className={styles.footer}>
